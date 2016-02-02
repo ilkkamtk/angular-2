@@ -10,12 +10,13 @@
     * example: scripts/controllers/loginCtrl.js
     
 ### Resources:
-    * [File upload example](https://uncorkedstudios.com/blog/multipartformdata-file-upload-with-angularjs)
+  * [File upload example](https://uncorkedstudios.com/blog/multipartformdata-file-upload-with-angularjs)
 
 ## Build & development
 
 ### Cloning
     * git clone https://github.com/ilkkamtk/angular-2.git
+    * run `npm install` and `bower install` 
     * Run `grunt` for building and `grunt serve` for preview.
     
 #### Saving to your own repo:
