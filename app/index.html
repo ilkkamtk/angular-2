@@ -23,18 +23,11 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-
-    <div ng-controller="LoginCtrl">
-        <login></login>
+    <div class="container">
+        <div ui-view></div>
     </div>
-    <div ng-controller="SignCtrl">
-        <sign-up></sign-up>
-    </div>
-    <div ng-controller="GetMessageCtrl">
-        <get-message></get-message>
-    </div>
-    <messages></messages>
-
+    
+    
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -43,19 +36,51 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/config/config.js"></script>
+    
     <script src="scripts/controllers/loginCtrl.js"></script>
-    <script src="scripts/controllers/signCtrl.js"></script>
-    <script src="scripts/controllers/GetMessageCtrl.js"></script>
+    <script src="scripts/controllers/signupCtrl.js"></script>
+    <script src="scripts/controllers/deletemessageCtrl.js"></script>
+    <script src="scripts/controllers/getallmessagesCtrl.js"></script>
+    <script src="scripts/controllers/getonemessageCtrl.js"></script>
+    <script src="scripts/controllers/modifymessageCtrl.js"></script>
+    <script src="scripts/controllers/sendmessageCtrl.js"></script>
+    <script src="scripts/controllers/deleteuserCtrl.js"></script>
+    <script src="scripts/controllers/getthreadsCtrl.js"></script>
+    <script src="scripts/controllers/getparentsCtrl.js"></script>
+    <script src="scripts/controllers/getonethreadCtrl.js"></script>
+    <script src="scripts/controllers/replymessageCtrl.js"></script>
+    <script src="scripts/controllers/getallusersCtrl.js"></script>
+    <script src="scripts/controllers/getoneuserCtrl.js"></script>
+    <script src="scripts/controllers/sendprofileimageCtrl.js"></script>
+    <script src="scripts/controllers/profileCtrl.js"></script>
+
     <script src="scripts/directives/login.js"></script>
-    <script src="scripts/directives/messages.js"></script>
     <script src="scripts/directives/signUp.js"></script>
-    <script src="scripts/directives/getMessage.js"></script>
+    <script src="scripts/directives/deleteMessage.js"></script>
+    <script src="scripts/directives/getAllMessages.js"></script>
+    <script src="scripts/directives/getOneMessage.js"></script>
+    <script src="scripts/directives/modifyMessage.js"></script>
+    <script src="scripts/directives/sendMessage.js"></script>
+    <script src="scripts/directives/deleteUser.js"></script>
+    <script src="scripts/directives/getThreads.js"></script>
+    <script src="scripts/directives/getParents.js"></script>
+    <script src="scripts/directives/getOneThread.js"></script>
+    <script src="scripts/directives/replyMessage.js"></script>
+    <script src="scripts/directives/getAllUsers.js"></script>
+    <script src="scripts/directives/getOneUser.js"></script>
+    <script src="scripts/directives/sendProfileimage.js"></script>
+    <script src="scripts/directives/profile.js"></script>
+
+
     <script src="scripts/services/ajaxFactory.js"></script>
+    <script src="scripts/services/chatService.js"></script>
     <!-- endbuild -->
 </body>
 

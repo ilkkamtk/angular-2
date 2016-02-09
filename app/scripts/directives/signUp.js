@@ -5,6 +5,6 @@ angular
     .directive('signUp', function() {
         return {
             restrict: 'E',
-            templateUrl: 'views/signUp.html'
+            templateUrl: 'views/signup.html'
         };
 });

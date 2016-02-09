@@ -2,9 +2,9 @@
 
 angular
   .module('chatApp')
-    .directive('login', function() {
+    .directive('modifyMessage', function() {
         return {
             restrict: 'E',
-            templateUrl: 'views/login.html'
+            templateUrl: 'views/modifymessage.html'
         };
 });

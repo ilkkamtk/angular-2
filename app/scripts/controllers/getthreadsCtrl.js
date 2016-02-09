@@ -1,12 +1,10 @@
 'use strict';
 
 angular.module('chatApp')
-  .controller('GetMessageCtrl', function ($scope, AjaxFactory) {
-    $scope.getMessage = function(){
-        // data lomakkeesta
-        var data = $scope.id;
-        // kutsu login-funktiota AjaxFactorystä
-        var request = AjaxFactory.getMessage(data);
+  .controller('GetThreadsCtrl', function ($scope, AjaxFactory) {
+    $scope.getThreads = function(){
+        // kutsu getThreads-funktiota AjaxFactorystä
+        var request = AjaxFactory.getThreads();
         request.then(function(response){
             // tee vastauksella jotain
             console.log(response.data);

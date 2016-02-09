@@ -1,7 +1,2 @@
 'use strict';
-angular
-  .module('chatApp', [
-    'ngResource',
-    'ngRoute',
-    'ngTouch'
-  ]);
+angular.module('chatApp', ['ui.router']);

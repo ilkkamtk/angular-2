@@ -2,9 +2,9 @@
 
 angular
   .module('chatApp')
-    .directive('getMessage', function() {
+    .directive('getThreads', function() {
         return {
             restrict: 'E',
-            templateUrl: 'views/getMessage.html'
+            templateUrl: 'views/getthreads.html'
         };
 });

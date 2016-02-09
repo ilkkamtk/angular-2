@@ -12,7 +12,7 @@ angular
 
         ajaxFunctions.deleteMessage = function (args) {
             return $http.delete(urlBase + '/messages/' + args);
-        };
+        }; 
 
         ajaxFunctions.getMessages = function () {
             return $http.get(urlBase + '/messages');
@@ -34,7 +34,7 @@ angular
             return $http.get(urlBase + '/threads');
         };
 
-        ajaxFunctions.getParentMessage = function () {
+        ajaxFunctions.getParentMessages    = function () {
             return $http.get(urlBase + '/parents');
         };
 
