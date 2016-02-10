@@ -1,0 +1,20 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="imageModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Tallenna profiilikuva</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-inline" id="imageForm">
+              <div class="form-group">
+                <label class="sr-only" for="name">Valitse kuva</label>
+                <input type="file" class="form-control" id="file" name="file" placeholder="Kuvatiedosto">
+                <input type="hidden" name="uID" value="{{userInfo.uID}}">
+              </div>
+              <button class="btn btn-default" ng-click="profileImage()">Tallenna</button>
+            </form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

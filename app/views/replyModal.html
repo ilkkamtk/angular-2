@@ -1,0 +1,21 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="replyModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Vastaa</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="message">Kirjoita viesti</label>
+                        <textarea id="message" name="message" class="form-control" rows="3" ng-model="message"></textarea>
+                    </div>
+                    <button class="btn btn-default" ng-click="reply()">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div><!-- /.modal -->

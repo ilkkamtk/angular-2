@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('chatApp')
-    .controller('GetThreadsCtrl', function ($scope, AjaxFactory) {
+    .controller('GetThreadsCtrl', function ($scope, AjaxFactory, ChatService) {
         // kutsu getThreads-funktiota AjaxFactorystä
         var request = AjaxFactory.getThreads();
         request.then(function (response) {
@@ -12,4 +12,6 @@ angular.module('chatApp')
             // tee virheellä jotain
             console.log(error.data);
         });
+    
+        $scope.reply = ChatService.reply;
     });
